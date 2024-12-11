@@ -15,26 +15,24 @@
 
     <header>
         <div class="encabezado">
-            <div id="m">Mafalda </div>
-            <button onclick=agregarMafalda()></button>
-        <div id="2">Creada por</div>
-        <button onclick=agregarQuino()></button>
-        <div id="q"> Quino</div>
-        <button onclick=cargarParrafo()></button>
+            <button id="m" onclick="agregarMafalda()" class="titulo-boton">Mafalda</button>
+            <button id="autor" onclick="agregarQuino()" class="titulo-boton">Creada por</button>
+            <button id="q" onclick="cargarParrafo()" class="titulo-boton">Quino</button>
         </div>
     </header>
+
     <div class="parte-uno">
 
         <div class="section">
 
-            <h1 class="titulo">Tira Cómica</h1>
+            <h1  id= titulo-uno class="titulo" onmouseover="mouseOver()" onmouseout="mouseOut()">Tira Cómica</h1>
             <p class="pf">Mafalda es una tira de prensa, con posteriores recopilaciones en álbumes.
                 Su primera publicación fue el 29 de septiembre de 1964 en la revista Primera Plana, aunque originalemte
                 nació como una idea de publicidad para la marca Siam Di Tella que no prosperó.
                 <br>
             </p>
 
-            <div class="titulo">Personajes<br></div><br>
+            <div id= titulo-uno class="titulo" onmouseover="mouseOver()" onmouseout="mouseOut()">Personajes<br></div><br>
             <table style="width:80%">
                 <thead>
                     <tr>
@@ -108,7 +106,7 @@
                 </tbody>
             </table>
 
-            <h2 class="titulo">Personajes Secundarios:</h2><br>
+            <h2 id= titulo-uno class="titulo" onmouseover="mouseOver()" onmouseout="mouseOut()">Personajes Secundarios:</h2><br>
 
             <ul class="pp">
                 <li>Don Manolo, padre de Manolito</li>
@@ -119,7 +117,7 @@
                 <li>Madre de Manolito</li>
                 <li> Padre Susanita</li>
                 <li>Muriel, chica guapa de la que Felipe está enamorado</li>
-                <li> Burocracia, tortuga de Mafalda</li>
+                <li> <button id="b" onclick="agregarBurocracia()">Burocracia</button> tortuga de Mafalda</li>
                 <li>Madre de Libertad</li>
             </ul>
         </div>
@@ -154,7 +152,7 @@
 
     <main>
 
-        <h3 class="titulo"> Breve descripción de cada uno </h3>
+        <h3 id= titulo-uno class="titulo" onmouseover="mouseOver()" onmouseout="mouseOut()"> Breve descripción de cada uno </h3>
         <div class="row-description">
             <h4> Mafalda:<br></h4>
             <img class="img"
@@ -182,8 +180,8 @@
         <div class="row-description">
             <h4> Padre:<br></h4>
             <img class="img"
-            src="https://cloudfront-us-east-1.images.arcpublishing.com/copesa/YQBUQL4CPZDBPGNQOOCMV7DWEA.jpg"
-            alt="Mafalda y su papá">
+                src="https://cloudfront-us-east-1.images.arcpublishing.com/copesa/YQBUQL4CPZDBPGNQOOCMV7DWEA.jpg"
+                alt="Mafalda y su papá">
             <p class="texto">
                 Padre de Mafalda y de Guille; la tira no revela su nombre y apellido. Característico empleado de
                 oficina, hombre que trabaja como corredor en una compañía de seguros.
@@ -194,12 +192,12 @@
                 Su afición es el cultivo de plantas de interior, ya que la familia vive en un apartamento. Conduce el
                 auto familiar, que es un Citroën 2CV.
             </p>
-           </div>
+        </div>
         <div class="row-description">
             <h4> Madre:<br></h4>
             <img class="img"
-            src="https://resizer.glanacion.com/resizer/v2/mafald-OLQ4NXL5GFHEHLVICKMAPC2BLA.jpg?auth=0b1ec252f062409a51afbf37ad02193804223a099229930a88b67b84bf322245&width=420&height=263&quality=70&smart=true"
-            alt="Raquel">
+                src="https://resizer.glanacion.com/resizer/v2/mafald-OLQ4NXL5GFHEHLVICKMAPC2BLA.jpg?auth=0b1ec252f062409a51afbf37ad02193804223a099229930a88b67b84bf322245&width=420&height=263&quality=70&smart=true"
+                alt="Raquel">
             <p class="texto">
                 Madre de Mafalda y de Guille. Es una típica ama de casa argentina de clase media de los años sesenta,
                 ocupada de lo que ocurre en su microclima hogareño.
@@ -228,7 +226,7 @@
                 Vive en el mismo edificio que Mafalda y su familia.
                 Físicamente, Felipe tiene cabello claro y lacio, con los dientes incisivos superiores sobresalientes.
             </p>
-            </div>
+        </div>
         <div class="row-description">
             <h4> Manolito:<br></h4>
             <img class="img" src="https://eligeeducar.cl/content/uploads/2020/09/comic-mafalda.jpg" alt="Manolito">
@@ -254,13 +252,13 @@
                 sus amigos.
                 Salvo por el vello facial, es idéntico a su padre y a su hermano mayor.
             </p>
-            </div>
+        </div>
         <div class="row-description">
             <h4>Susanita:<br></h4>
             <img class="img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTFhkGYlcQtRzIAva1bs9I8jG8PrjJ3m2MLdmyG2fnoaI8yCRCV-rgF7dQIkPYXILMnoUuz-N8z3QKYWfA6jHYbUTiVMnwNZN1-E58H8NCweWVH0gyE3Rg9uDP7EXFR8HRjL81-dzNOGU/s280/mafalda67451_n.jpg"
                 alt="Susanita">
-           <p class="texto">
+            <p class="texto">
                 Amiga de Mafalda. Hasta la llegada de Libertad, Mafalda y Susanita son las únicas mujeres del grupo de
                 amigos de la tira.
                 Parlanchina, pendenciera, chismosa —nada de lo que pasa en su vecindario ocurre sin que ella se entere—
@@ -280,7 +278,7 @@
                 Contrasta fuertemente con la actitud de Mafalda, más intelectual y concientizada de la liberación de la
                 mujer y de la igualdad entre los sexos.
                 Físicamente, Susanita es rubia y tiene bucles, lo que le da un aspecto similar al de su madre.
-            </p>   
+            </p>
         </div>
         <div class="row-description">
             <h4>Miguelito:<br></h4>
